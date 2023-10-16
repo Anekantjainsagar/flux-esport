@@ -63,7 +63,7 @@ const Block = ({ image, name, time }) => {
       <Image
         src={image}
         alt="Free fire"
-        className="w-[90vw] md:w-[21vw] rounded-lg md:rounded-3xl"
+        className="w-[90vw] md:w-[18vw] rounded-lg md:rounded-3xl"
       />
       <h1 className="text-[14px] md:text-3xl mt-1 font-extrabold uppercase">
         {name}
