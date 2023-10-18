@@ -10,6 +10,13 @@ import flux from "./Assets/Flux Logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
+import {
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  AiOutlineLinkedin,
+  AiOutlineYoutube,
+} from "react-icons/ai";
+
 const Home = () => {
   return (
     <div className="background">
@@ -21,7 +28,7 @@ const Home = () => {
         <Image src={flux} alt="SATI logo" className="w-[14vw] md:w-[5.5vw]" />
       </div>
       <div className="flex items-center justify-between h-[70vh] mt-[6vw] md:mt-[3vw] px-[4vw] md:px-[9vw]">
-        <div className="flex flex-col justify-between items-center h-full">
+        <div className="flex flex-col justify-between items-center h-full md:w-full w-[140vw]">
           <Block
             image={counterStrike}
             name="Counter strike"
@@ -29,7 +36,7 @@ const Home = () => {
           />
           <Block image={codm} name="Call of duty" time="COming soon..." />
         </div>
-        <div className="flex flex-col justify-center items-center h-full">
+        <div className="flex flex-col justify-center items-center h-full md:w-full w-[180vw] md:mr-0 -mr-14 md:ml-0 -ml-14">
           <Block image={valorent} name="Valorant" time="28-29 Oct, 2023" />
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSd1AvigcfzccreTppftlWzV4ZXDMkKQ3yTJyCnXi5StDQxHZg/viewform?usp=sf_link"
@@ -40,18 +47,43 @@ const Home = () => {
             </button>
           </Link>
         </div>
-        <div className="flex flex-col justify-between items-center h-full">
+        <div className="flex flex-col justify-between items-center h-full md:w-full w-[140vw]">
           <Block image={pubg} name="BGMI" time="COming soon..." />
           <Block image={freefire} name="Free Fire" time="COming soon..." />
         </div>
       </div>
       <div className="px-[5vw] md:px-[10vw] mt-[6vw] md:mt-[1vw] flex justify-between items-center">
-        <button className="bg-gradient-to-br from-[#f37c3e] to-[#820ec6] text-white rounded-full px-4 md:px-5 py-0.5 md:py-1 text-sm md:text-base font-semibold">
-          FOLLOW US
-        </button>
-        <button className="bg-gradient-to-br from-[#ffa373] to-[#f37c3e] text-white rounded-full px-4 md:px-5 py-0.5 md:py-1 text-sm md:text-base  font-semibold">
-          CONTACT US
-        </button>
+        <div className="flex items-center">
+          <button className="bg-gradient-to-br from-[#f37c3e] to-[#820ec6] mr-3 text-white rounded-full px-2 md:px-5 py-0.5 md:py-1 text-xs md:text-base font-semibold">
+            FOLLOW US
+          </button>
+          <Link
+            target="_blank"
+            href={"https://instagram.com/fluxsati?igshid=OGQ5ZDc2ODk2ZA=="}
+          >
+            <AiOutlineInstagram color="white" size={28} className="mr-2" />
+          </Link>
+          <Link target="_blank" href={"https://www.facebook.com/fluxsati"}>
+            <AiOutlineFacebook color="white" size={28} className="mr-2" />
+          </Link>
+          <Link
+            target="_blank"
+            href={"https://youtube.com/@fluxsati?feature=shared"}
+          >
+            <AiOutlineYoutube color="white" size={28} className="mr-2" />
+          </Link>
+          <Link
+            target="_blank"
+            href={"https://www.linkedin.com/company/fluxsati/"}
+          >
+            <AiOutlineLinkedin color="white" size={28} className="mr-2" />
+          </Link>
+        </div>
+        <Link href={"tel:+918120032253"}>
+          <button className="bg-gradient-to-br from-[#ffa373] to-[#f37c3e] text-white rounded-full px-2 md:px-5 py-0.5 md:py-1 text-xs md:text-base font-semibold">
+            CONTACT US
+          </button>
+        </Link>
       </div>
     </div>
   );
