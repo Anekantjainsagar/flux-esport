@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <div className="background">
       <div className="flex items-center justify-between px-3 md:px-10 py-3 text-white">
-        <Image src={sati} alt="SATI logo" className="w-[10.5vw] md:w-[5vw]" />
+        <Image src={sati} alt="SATI logo" className="w-[9.5vw] md:w-[5vw]" />
         <h1 className="text-[19px] md:text-5xl font-extrabold">
           TECHNICAL CLUB ‘FLUX’
         </h1>
